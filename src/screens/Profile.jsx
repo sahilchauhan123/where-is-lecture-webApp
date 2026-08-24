@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import useAuthStore from '../store/useAuthStore';
 import useLectureStore from '../store/useLectureStore';
-import { LogIn, HelpCircle, LogOut, ChevronRight } from 'lucide-react';
+import { LogIn, HelpCircle, LogOut, ChevronRight, Download } from 'lucide-react';
 import './Profile.css';
 
 const Profile = () => {
@@ -60,6 +60,19 @@ const Profile = () => {
           <div className="profile-option-row">
             <HelpCircle size={32} color="var(--grey)" />
             <span className="profile-option-text font-semibold">Feedback</span>
+            <ChevronRight size={30} color="var(--grey)" />
+          </div>
+        </button>
+
+        {/* Download App */}
+        <button 
+          className="profile-option-btn" 
+          onClick={() => window.open('https://pub-6650edc3599d4e0f8b52ae42c11a4c45.r2.dev/whereislecture.apk', '_blank')}
+        >
+          <div className="profile-divider"></div>
+          <div className="profile-option-row">
+            <Download size={32} color="var(--grey)" />
+            <span className="profile-option-text font-semibold">Download App</span>
             <ChevronRight size={30} color="var(--grey)" />
           </div>
         </button>
