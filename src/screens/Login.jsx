@@ -25,7 +25,7 @@ const Login = () => {
           headers: { Authorization: `Bearer ${tokenResponse.access_token}` },
         });
         const googleUser = await userInfoRes.json();
-        
+
         await handleSuccessfulAuth(googleUser);
       } catch (error) {
         console.error('Google user info fetch error:', error);
@@ -54,7 +54,7 @@ const Login = () => {
 
       console.log('userPayload', userPayload);
       const email = googleUser.email;
-      
+
       const usersRef = collection(db, 'Users');
       const q = query(usersRef, where('email', '==', email));
       const querySnapshot = await getDocs(q);
@@ -117,7 +117,7 @@ const Login = () => {
       <div className="login-logo-section">
         <img src={sahilLogo} alt="Logo" className="login-image" />
         <p className="login-subtitle font-semibold">
-          Get Notified 5 minutes before Lectures
+          Get Notified 5 minutes before Lectures for PCTE Students
         </p>
       </div>
 
@@ -126,8 +126,8 @@ const Login = () => {
           <div className="spinner"></div>
         </div>
       ) : (
-        <button 
-          className="google-signin-btn" 
+        <button
+          className="google-signin-btn"
           onClick={() => {
             setLoader(true);
             login();
