@@ -84,16 +84,14 @@
 .profile-option-text {
   font-size: 5vw;
   color: var(--grey);
-  flex: 1;
-  text-align: left;
-  margin-left: 4vw;
+  text-align: center;
 }
 
 @media (min-width: 480px) {
   .profile-option-btn { margin-top: 12px; }
   .profile-divider { height: 2px; width: 360px; }
   .profile-option-row { width: 360px; margin-top: 8px; padding: 0 16px; }
-  .profile-option-text { font-size: 20px; margin-left: 16px; }
+  .profile-option-text { font-size: 20px; }
 }
 
 .mt-2 {
