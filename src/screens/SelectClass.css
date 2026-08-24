@@ -1,0 +1,132 @@
+.select-class-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-color: var(--white);
+  height: 100vh;
+}
+
+.select-image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7vw;
+}
+
+.select-image {
+  height: 77vw; /* wp(100/1.3) roughly */
+  width: 77vw;
+  object-fit: contain;
+}
+
+.select-content {
+  display: flex;
+  flex-direction: column;
+  padding: 0 5vw;
+}
+
+.select-title {
+  font-size: 8vw;
+  color: var(--primary);
+  margin-top: 4vw;
+  margin-bottom: 2vw;
+}
+
+@media (min-width: 480px) {
+  .select-image-wrapper { margin-top: 28px; }
+  .select-image { height: 300px; width: 300px; }
+  .select-content { padding: 0 20px; }
+  .select-title { font-size: 32px; margin-top: 16px; margin-bottom: 8px; }
+}
+
+/* Custom Dropdown */
+.custom-dropdown-container {
+  position: relative;
+  width: 100%;
+}
+
+.dropdown-button {
+  width: 100%;
+  height: 6vh;
+  min-height: 40px;
+  background-color: var(--white);
+  border-radius: 30px;
+  padding: 12px;
+  border: 0.5px solid gray;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+
+.text-gray { color: gray; font-size: 14px; }
+.text-black { color: black; font-size: 16px; }
+
+.dropdown-menu {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  right: 0;
+  background-color: var(--white);
+  border: 0.5px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  z-index: 10;
+  max-height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-search {
+  margin: 10px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 12px;
+  outline: none;
+}
+
+.dropdown-list {
+  overflow-y: auto;
+  flex: 1;
+}
+
+.dropdown-item {
+  width: 100%;
+  padding: 10px;
+  text-align: left;
+  background-color: var(--white);
+  border-bottom: 0.5px solid #ddd;
+  font-size: 15px;
+  color: black;
+  transition: background-color 0.2s;
+}
+
+.dropdown-item:hover {
+  background-color: #f5f5f5;
+}
+
+/* Next Button */
+.next-button {
+  background-color: var(--primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3.5vw;
+  border-radius: 10vw;
+  margin-top: 20vh;
+  color: var(--white);
+  font-size: 3.5vw;
+}
+
+@media (min-width: 480px) {
+  .next-button {
+    padding: 14px;
+    border-radius: 40px;
+    font-size: 14px;
+  }
+}
+
+.opacity-half {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

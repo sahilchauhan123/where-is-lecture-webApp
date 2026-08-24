@@ -1,0 +1,105 @@
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--white);
+  min-height: 100%;
+}
+
+.profile-header-section {
+  margin-top: 15vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-large-img {
+  height: 40vw;
+  width: 40vw;
+  border-radius: 20vw;
+  object-fit: cover;
+}
+
+.profile-name-text {
+  color: var(--primary);
+  font-size: 7vw;
+  margin-top: 5vw;
+  text-transform: capitalize;
+}
+
+.profile-email-text {
+  color: #ABABAB;
+  font-size: 4vw;
+  margin-top: -1vw;
+}
+
+@media (min-width: 480px) {
+  .profile-header-section { margin-top: 60px; }
+  .profile-large-img { height: 160px; width: 160px; border-radius: 80px; }
+  .profile-name-text { font-size: 28px; margin-top: 20px; }
+  .profile-email-text { font-size: 16px; margin-top: -4px; }
+}
+
+.profile-options-section {
+  margin-top: 13vw;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 480px) {
+  .profile-options-section { margin-top: 52px; }
+}
+
+.profile-option-btn {
+  background: transparent;
+  border: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 3vw;
+}
+
+.profile-divider {
+  height: 0.4vw;
+  background-color: var(--grey);
+  width: 90vw;
+}
+
+.profile-option-row {
+  display: flex;
+  flex-direction: row;
+  width: 90vw;
+  margin-top: 2vw;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4vw;
+  box-sizing: border-box;
+}
+
+.profile-option-text {
+  font-size: 5vw;
+  color: var(--grey);
+  flex: 1;
+  text-align: left;
+  margin-left: 4vw;
+}
+
+@media (min-width: 480px) {
+  .profile-option-btn { margin-top: 12px; }
+  .profile-divider { height: 2px; width: 360px; }
+  .profile-option-row { width: 360px; margin-top: 8px; padding: 0 16px; }
+  .profile-option-text { font-size: 20px; margin-left: 16px; }
+}
+
+.mt-2 {
+  margin-top: 2vw;
+}
+
+@media (min-width: 480px) {
+  .mt-2 { margin-top: 8px; }
+}

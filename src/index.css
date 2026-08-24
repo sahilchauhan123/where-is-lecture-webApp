@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* Colors from React Native App */
+  --primary: #392AAB;
+  --secondary: #6E6E6E;
+  --background: #023047;
+  --lightGrey: #ABABAB;
+  --light: #8ecae6;
+  --text: #000000;
+  --bggrey: #F6F6F5;
+  --placeholder: #9CA3AF;
+  --white: #FFFFFF;
+  --orange: #E87A30;
+  --grey: #121212B2;
+
+  /* Fonts */
+  --font-regular: 'Poppins', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-regular);
+  background-color: var(--bggrey);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+#root {
+  width: 100%;
+  max-width: 480px; /* Mobile first layout constraint for desktop */
+  background-color: var(--white);
+  min-height: 100vh;
+  position: relative;
+  box-shadow: 0 0 20px rgba(0,0,0,0.05);
+  overflow-x: hidden;
+}
+
+/* Typography Utility Classes */
+.font-light { font-weight: 300; }
+.font-regular { font-weight: 400; }
+.font-medium { font-weight: 500; }
+.font-semibold { font-weight: 600; }
+.font-bold { font-weight: 700; }
+
+/* Scale utility mimicking wp() and hp() approx values for web */
+.p-container { padding: 6vw; }
+@media (min-width: 480px) {
+  .p-container { padding: 24px; }
+}
+
+/* Reusable Components Styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+  background: none;
+  font-family: inherit;
+  cursor: pointer;
+}

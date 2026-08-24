@@ -1,0 +1,271 @@
+.lecture-details-wrapper {
+  margin-top: 3vw;
+  margin-left: 6vw;
+  margin-right: 6vw;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 480px) {
+  .lecture-details-wrapper {
+    margin-top: 12px;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+}
+
+.lecture-list {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 480px) {
+  .lecture-list {
+    padding-bottom: 0px;
+  }
+}
+
+.lecture-item-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2vw;
+  margin-bottom: 6vw;
+}
+
+@media (min-width: 480px) {
+  .lecture-item-container {
+    margin-top: 8px;
+    margin-bottom: 24px;
+  }
+}
+
+.lecture-time-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
+}
+
+.time-start {
+  color: black;
+  font-size: 4.5vw;
+}
+
+.time-end {
+  color: var(--lightGrey);
+  font-size: 4vw;
+  margin-top: -2vw;
+}
+
+@media (min-width: 480px) {
+  .time-start {
+    font-size: 18px;
+  }
+
+  .time-end {
+    font-size: 16px;
+    margin-top: -8px;
+  }
+}
+
+/* Card Styles */
+.lecture-card-normal {
+  margin-left: 4vw;
+  background-color: var(--lightGrey);
+  flex: 4;
+  padding: 4vw;
+  border-radius: 4vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.lecture-card-normal.ongoing {
+  background-color: var(--primary);
+}
+
+.lecture-title {
+  color: black;
+  font-size: 4.5vw;
+}
+
+.lecture-card-normal.ongoing .lecture-title,
+.lecture-card-normal.ongoing .info-text {
+  color: var(--white);
+}
+
+@media (min-width: 480px) {
+  .lecture-card-normal {
+    margin-left: 16px;
+    padding: 16px;
+    border-radius: 16px;
+  }
+
+  .lecture-title {
+    font-size: 18px;
+  }
+}
+
+.lecture-info-row {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2vw;
+}
+
+.lecture-icons-col {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.4vw;
+}
+
+.icon-pin {
+  height: 5vw;
+  width: 5vw;
+  object-fit: contain;
+}
+
+.icon-user {
+  height: 3.5vw;
+  width: 3.5vw;
+  margin-top: 3vw;
+  margin-left: 0.5vw;
+  object-fit: contain;
+}
+
+.lecture-text-col {
+  margin-left: 3vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.info-text {
+  color: black;
+  font-size: 4vw;
+}
+
+.mt-half {
+  margin-top: 0.5vw;
+}
+
+@media (min-width: 480px) {
+  .icon-pin {
+    height: 20px;
+    width: 20px;
+  }
+
+  .icon-user {
+    height: 14px;
+    width: 14px;
+    margin-top: 12px;
+    margin-left: 2px;
+  }
+
+  .lecture-text-col {
+    margin-left: 12px;
+  }
+
+  .info-text {
+    font-size: 16px;
+  }
+
+  .mt-half {
+    margin-top: 2px;
+  }
+}
+
+/* Break Card */
+.lecture-card-break {
+  margin-left: 4vw;
+  background-color: var(--orange);
+  flex: 4;
+  padding: 8.5vw 4vw;
+  border-radius: 4vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.break-title {
+  color: var(--white);
+  font-size: 7vw;
+  text-transform: capitalize;
+}
+
+/* Long Length Lecture Card */
+.lecture-card-long {
+  margin-left: 4vw;
+  background-color: var(--lightGrey);
+  flex: 4;
+  padding: 4vw;
+  border-radius: 4vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lecture-title-long {
+  color: var(--text);
+  font-size: 4vw;
+  text-transform: capitalize;
+}
+
+@media (min-width: 480px) {
+
+  .lecture-card-break,
+  .lecture-card-long {
+    margin-left: 16px;
+    border-radius: 16px;
+  }
+
+  .lecture-card-break {
+    padding: 34px 16px;
+  }
+
+  .lecture-card-long {
+    padding: 16px;
+  }
+
+  .break-title {
+    font-size: 28px;
+  }
+
+  .lecture-title-long {
+    font-size: 16px;
+  }
+}
+
+/* No Lecture Card */
+.no-lecture-card {
+  background-color: var(--orange);
+  flex: 4;
+  padding: 8.5vw 4vw;
+  border-radius: 4vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.no-lecture-text {
+  text-transform: capitalize;
+  color: var(--white);
+  font-size: 7vw;
+}
+
+.bottom-padding {
+  padding-bottom: 70vw;
+}
+
+@media (min-width: 480px) {
+  .no-lecture-card {
+    padding: 34px 16px;
+    border-radius: 16px;
+  }
+
+  .no-lecture-text {
+    font-size: 28px;
+  }
+
+  .bottom-padding {
+    padding-bottom: 280px;
+  }
+}

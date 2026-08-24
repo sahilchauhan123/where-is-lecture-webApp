@@ -1,0 +1,120 @@
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  flex: 1;
+  height: 100vh;
+  background-color: var(--bggrey);
+}
+
+.login-logo-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-image {
+  height: 40vh; /* approx hp(20 * 2) */
+  width: 100vw; /* approx wp(50 * 2) */
+  max-width: 400px;
+  object-fit: contain;
+}
+
+.login-subtitle {
+  color: var(--orange);
+  font-size: 6vw; /* wp(6) */
+  text-align: center;
+  margin-top: -8vw; /* wp(-8) */
+}
+
+@media (min-width: 480px) {
+  .login-subtitle {
+    font-size: 24px;
+    margin-top: -32px;
+  }
+}
+
+.loader-container {
+  background-color: var(--primary);
+  border-radius: 10vw; /* wp(10) */
+  width: 80vw; /* wp(80) */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2.5vw 0; /* marginVertical: wp(2.5) */
+}
+
+@media (min-width: 480px) {
+  .loader-container {
+    border-radius: 40px;
+    width: 384px;
+    padding: 10px 0;
+  }
+}
+
+.spinner {
+  width: 30px;
+  height: 30px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: var(--white);
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.google-signin-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 0.5vw; /* wp(0.5) */
+  align-items: center;
+  background-color: var(--primary);
+  width: 80vw; /* wp(80) */
+  border-radius: 10vw; /* wp(10) */
+  transition: opacity 0.2s;
+}
+
+@media (min-width: 480px) {
+  .google-signin-btn {
+    padding: 2px;
+    width: 384px;
+    border-radius: 40px;
+  }
+}
+
+.google-signin-btn:hover {
+  opacity: 0.9;
+}
+
+.google-icon {
+  height: 12vw; /* wp(12) */
+  width: 12vw;
+  background-color: white;
+  border-radius: 12vw;
+}
+
+@media (min-width: 480px) {
+  .google-icon {
+    height: 48px;
+    width: 48px;
+    border-radius: 48px;
+  }
+}
+
+.google-text {
+  font-size: 5vw; /* wp(5) */
+  color: var(--white);
+  margin-left: 4vw; /* wp(4) */
+}
+
+@media (min-width: 480px) {
+  .google-text {
+    font-size: 20px;
+    margin-left: 16px;
+  }
+}
